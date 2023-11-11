@@ -10,7 +10,7 @@ def test_password(hash_password,algorithm_salt,plaintext):
 def read_dictionary(dictionary_file):
     script_path = os.path.realpath(__file__)
     script_folder = os.path.split(script_path)
-    f = open(script_folder[0] + "/" + dictionary_file,"r")
+    f = open(script_folder[0] + "\\" + dictionary_file,"r")
     message = f.read()
     return message
 
